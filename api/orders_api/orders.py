@@ -75,8 +75,8 @@ async def count_orders_last_7_months():
 
 
 # Удаление заказа по его ID
-@orders_router.delete('/api/delete_comment')
-async def delete_comment(order_id):
+@orders_router.delete('/api/delete_order')
+async def delete_order(order_id):
     result = delete_order_db(order_id)
     if result:
         return result

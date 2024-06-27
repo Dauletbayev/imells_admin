@@ -43,6 +43,7 @@ def register_user_db(
     return "User successfully registered"
 
 
+
 # Удаление пользователя по ID
 def delete_user_db(user_id: int):
     db = next(get_db())
